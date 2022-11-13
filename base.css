@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --sans-family: Roboto, Arial, Helvetica, sans-serif;
+  --mono-family: 'Roboto Mono', monospace;
+  --serif-family: 'Roboto Slab', Georgia, serif;
+}
+
+html {
+  font-family: var(--sans-family);
+  height: 100%;
+  background: #999;
+}
+
+body {
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: #ddd;
+  min-height: 100%;
+}
+
+html.center-center-all body {
+  display: grid;
+  place-items: center;
+}
+
+html.page-600 body,
+body.page-600 {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+html.page-800 body,
+body.page-800 {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+html.page-900 body,
+body.page-900 {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+html.blueish {
+  background: #99a;
+}
+
+html.blueish body {
+  background: #ddf;
+}
+
+html.greenish {
+  background: #9a9;
+}
+
+html.greenish body {
+  background: #dfd;
+}
+
+html.redish {
+  background: #a99;
+}
+
+html.redish body {
+  background: #fdd;
+}
+
+html.tealish {
+  background: #9aa;
+}
+
+html.tealish body {
+  background: #dff;
+}
+
+html.yellowish {
+  background: #aa9;
+}
+
+html.yellowish body {
+  background: #ffd;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active,
+a:hover {
+  text-decoration: underline;
+  color: darkblue;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-center {
+  display: grid;
+  place-items: center;
+}
+
+pre,
+code,
+tt,
+.monospace-font {
+  font-family: var(--mono-family);
+}
+
+.sans-font {
+  font-family: var(--sans-family);
+}
+
+quote,
+.serif-font {
+  font-family: var(--serif-family);
+}
